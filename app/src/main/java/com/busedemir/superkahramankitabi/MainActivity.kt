@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // ilk önce elemanlarımı liste ekliyorum.
+
         var superKahramanisimleri = ArrayList<String>()
         superKahramanisimleri.add("Batman")
         superKahramanisimleri.add("Superman")
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         superKahramanisimleri.add("Buse")
 
         // verimsiz BİTMAP oluşturmak
+        // elemanlarımın resimlerini bitmap ile ekliyorum. bunlarda aslında birer veri nesneleştirmek gerekiyor.
 
         val batmanBitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.batman)
         val supermanBitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.superman)
